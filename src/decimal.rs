@@ -11,7 +11,7 @@ use serde_json::Number as JsonNumber;
 
 use crate::error::{Error, Result};
 
-#[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, JsonSchema)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq, PartialOrd, Ord, JsonSchema)]
 pub struct SafeDecimal(#[schemars(with = "f64")] u64);
 
 impl SafeDecimal {
