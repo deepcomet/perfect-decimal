@@ -1,0 +1,21 @@
+[package]
+name = "perfect-decimal"
+version = "0.0.1"
+authors = ["Deepcomet <hello@deepcomet.io>"]
+categories = ["encoding", "mathematics", "web-programming"]
+edition = "2021"
+homepage = "https://github.com/deepcomet/perfect-decimal"
+keywords = ["decimal", "serialize", "float", "ieee754"]
+license = "Unlicense"
+readme = "README.md"
+repository = "https://github.com/deepcomet/perfect-decimal"
+description = "Limited range decimals which serialize as IEE754 floats with no loss of precision."
+
+[lib]
+name = "perfect_decimal"
+
+[dependencies]
+schemars = "0.8.21"
+serde = { version = "1.0.207", default-features = false, features = ["derive"] }
+serde_json = { version = "1.0.124", default-features = false, features = ["arbitrary_precision"] }
+thiserror = "1.0.63"
