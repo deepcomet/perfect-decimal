@@ -1,6 +1,6 @@
 [package]
 name = "perfect-decimal"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["Deepcomet <hello@deepcomet.io>"]
 categories = ["encoding", "mathematics", "web-programming"]
 edition = "2021"
